@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-13T14:07:16.771Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" etag="2fYGG8z_sB5Dhiu2qk9T" version="15.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-13T14:07:46.507Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" etag="IpGLHD3eTtDiSVc_KllA" version="15.5.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="826" dy="454" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1390" pageHeight="980" math="0" shadow="0">
       <root>
@@ -767,6 +767,11 @@
         <mxCell id="IsPKWjWjbbhWOZvx0KAc-64" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="IsPKWjWjbbhWOZvx0KAc-61">
           <mxGeometry y="60" width="60" height="26" as="geometry" />
         </mxCell>
+        <mxCell id="IsPKWjWjbbhWOZvx0KAc-144" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;startFill=0;endArrow=openThin;endFill=0;startSize=14;endSize=12;sourcePerimeterSpacing=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="idtFsPLVlB8KMN15-Iu1-51">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1806" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="idtFsPLVlB8KMN15-Iu1-51" value="+MasterReports" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" collapsed="1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1746" y="606" width="120" height="26" as="geometry">
             <mxRectangle x="1746" y="606" width="100" height="60" as="alternateBounds" />
@@ -777,6 +782,9 @@
         </mxCell>
         <mxCell id="idtFsPLVlB8KMN15-Iu1-53" value="+CreateDeltaMasterReportJob(RestClient, long, Item, String) : MasterReport&#xa;+CreateFullMasterReportJob(RestClient, long , term) : MasterReport&#xa;+DeleteAllMasterReporJobs(RestClient, long) : String&#xa;+DeleteMasterResportJob(RestClient, long, String) : String&#xa;+GetListOfMasterReportJobs(RestClient, long) : MasterReport[]&#xa;+GetMasterReportJob(RestClient ,long, String) : MasterReport" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="idtFsPLVlB8KMN15-Iu1-51">
           <mxGeometry y="34" width="120" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="IsPKWjWjbbhWOZvx0KAc-143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;startFill=0;endArrow=openThin;endFill=0;startSize=14;endSize=12;sourcePerimeterSpacing=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="idtFsPLVlB8KMN15-Iu1-54" target="idtFsPLVlB8KMN15-Iu1-25">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="idtFsPLVlB8KMN15-Iu1-54" value="+MasterReportSample" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1796" y="745" width="100" height="60" as="geometry" />
