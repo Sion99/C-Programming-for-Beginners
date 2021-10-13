@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-13T11:59:09.924Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" etag="hv6QDpTdRKLH-AF-KXrB" version="15.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-13T12:00:42.910Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36" etag="ACMO9zkBTubLdWwFamGX" version="15.5.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1390" pageHeight="980" math="0" shadow="0">
+    <mxGraphModel dx="660" dy="1087" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1390" pageHeight="980" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -467,33 +467,6 @@
           <mxGeometry y="26" width="100" height="8" as="geometry" />
         </mxCell>
         <mxCell id="idtFsPLVlB8KMN15-Iu1-64" value="+CreateDeltaMasterReportJob(RestClient, long, Item, String) : MasterReport&#xa;+CreateFullMasterReportJob(RestClient, long , term) : MasterReport&#xa;+DeleteAllMasterReporJobs(RestClient, long) : String&#xa;+DeleteMasterResportJob(RestClient, long, String) : String&#xa;+GetListOfMasterReportJobs(RestClient, long) : MasterReport[]&#xa;+GetMasterReportJob(RestClient ,long, String) : MasterReport" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="idtFsPLVlB8KMN15-Iu1-62">
-          <mxGeometry y="34" width="100" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="idtFsPLVlB8KMN15-Iu1-68" value="+Stat" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2850" y="607" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="idtFsPLVlB8KMN15-Iu1-69" value="-dailyStat : DailyStat&#xa;-summaryStat : SummaryStat" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="idtFsPLVlB8KMN15-Iu1-68">
-          <mxGeometry y="26" width="100" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="idtFsPLVlB8KMN15-Iu1-70" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="idtFsPLVlB8KMN15-Iu1-68">
-          <mxGeometry y="52" width="100" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="idtFsPLVlB8KMN15-Iu1-75" value="+Stats" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2710" y="600" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="idtFsPLVlB8KMN15-Iu1-77" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="idtFsPLVlB8KMN15-Iu1-75">
-          <mxGeometry y="26" width="100" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="idtFsPLVlB8KMN15-Iu1-78" value="+getDailyStatByld(RestClient, long, String, List&lt;Field&gt;, TimeRange, DatePreset, Breakdown) : DailyStat&#xa;+getSummaryStatById(RestClient, long, String, List&lt;Field&gt;, TimeRange, DatePreset, Breakdown) : SummaryStat&#xa;+getSummaryStatByIdList(RestClient, long, String, List&lt;Field&gt;, TimeRange, DatePreset, Breakdown) : SummaryStat" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="idtFsPLVlB8KMN15-Iu1-75">
-          <mxGeometry y="34" width="100" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="idtFsPLVlB8KMN15-Iu1-79" value="+Campaigns" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2580" y="600" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="idtFsPLVlB8KMN15-Iu1-80" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="idtFsPLVlB8KMN15-Iu1-79">
-          <mxGeometry y="26" width="100" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="idtFsPLVlB8KMN15-Iu1-81" value="+list(RestClient, long) : Campaign[]&#xa;+update(RestClient, long, Campaign , String) : Campaign" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="idtFsPLVlB8KMN15-Iu1-79">
           <mxGeometry y="34" width="100" height="26" as="geometry" />
         </mxCell>
         <mxCell id="IsPKWjWjbbhWOZvx0KAc-65" value="StatSample" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
