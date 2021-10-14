@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-14T14:00:02.615Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="CR0PH7oNpeoIcZ_2jF5A" version="15.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-14T14:00:07.966Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="yNNlQvMgvOeBJ29IEiNv" version="15.5.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="6373" dy="2434" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4700" pageHeight="1500" math="0" shadow="0">
+    <mxGraphModel dx="6686" dy="2526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4700" pageHeight="1500" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -590,7 +590,7 @@
           <mxGeometry y="34" width="610" height="50" as="geometry" />
         </mxCell>
         <mxCell id="idtFsPLVlB8KMN15-Iu1-48" value="+Device" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;arcSize=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-1060" y="-360" width="80" height="88" as="geometry" />
+          <mxGeometry x="-1060" y="-550" width="80" height="88" as="geometry" />
         </mxCell>
         <mxCell id="idtFsPLVlB8KMN15-Iu1-49" value="+PC &#xa;+MOBILE&#xa;+BOTH" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="idtFsPLVlB8KMN15-Iu1-48" vertex="1">
           <mxGeometry y="26" width="80" height="54" as="geometry" />
