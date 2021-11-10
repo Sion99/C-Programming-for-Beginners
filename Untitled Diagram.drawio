@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-10T13:09:34.756Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="lmgkMM9p60PAnMCVRVRM" version="15.7.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-10T13:11:13.931Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="vhMpUNitKkAx-gJWrXeH" version="15.7.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="923" dy="456" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -508,7 +508,7 @@
             <mxPoint x="1135" y="1144.95" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QkMDThP16RGxQZJ2cedM-26" value="&lt;font color=&quot;#0f0f0f&quot; style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;span class=&quot;pl-smi&quot; style=&quot;box-sizing: border-box ; font-size: 12px&quot;&gt;&lt;span class=&quot;pl-token&quot; style=&quot;box-sizing: border-box&quot;&gt;RestClient&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;(baseUrl, apiKey, secretKey)&lt;/span&gt;&lt;/font&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;rounded=0;" parent="1" edge="1">
+        <mxCell id="QkMDThP16RGxQZJ2cedM-26" value="&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;rest: RestClient&lt;/span&gt;&lt;/font&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="340" y="750" as="targetPoint" />
             <mxPoint x="725" y="749.9999999999993" as="sourcePoint" />
