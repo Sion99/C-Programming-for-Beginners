@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-11-10T14:12:33.177Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="mfyG_OeVmFmeX8ayeDp9" version="15.7.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-10T14:19:46.510Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="PAEd_lBrejAGlBZUdYOP" version="15.7.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="7552" dy="2316" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="2900" math="0" shadow="0">
+    <mxGraphModel dx="4438" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="2900" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -683,6 +683,18 @@
         </mxCell>
         <mxCell id="K77BbFVQGzKXvFR-Lmqt-4" value="&lt;span style=&quot;font-size: 11px ; background-color: rgb(255 , 255 , 255)&quot;&gt;&amp;lt;&amp;lt;create&amp;gt;&amp;gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-2750" y="310" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="K77BbFVQGzKXvFR-Lmqt-6" value="Control Object" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2846" y="60" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="K77BbFVQGzKXvFR-Lmqt-7" value="Boundary Object" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-3215" y="70" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="K77BbFVQGzKXvFR-Lmqt-8" value="Control Object" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2489" y="60" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="K77BbFVQGzKXvFR-Lmqt-9" value="Entity Object" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2315" y="60" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
