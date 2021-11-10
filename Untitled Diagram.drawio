@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-10T09:29:01.520Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="qq_qsFE20XuRO5KiXl4E" version="15.7.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-10T09:29:25.121Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="9lE-zibG2qSK8bsobmjE" version="15.7.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1221" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -181,7 +181,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4GVTrCW4khlCdeunZ2BW-109" value="getDailyStatByld" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;entryX=0.394;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="QkMDThP16RGxQZJ2cedM-5">
+        <mxCell id="4GVTrCW4khlCdeunZ2BW-109" value="getSummaryStatByld" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;entryX=0.394;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="QkMDThP16RGxQZJ2cedM-5">
           <mxGeometry x="0.8759" width="80" relative="1" as="geometry">
             <mxPoint x="-540" y="1630" as="sourcePoint" />
             <mxPoint x="248.94000000000005" y="1630.3500000000001" as="targetPoint" />
