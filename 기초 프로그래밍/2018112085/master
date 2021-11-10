@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-10T13:22:16.943Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="q4pmeha0ojEzsYxbjZUx" version="15.7.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-10T13:24:35.726Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="6WyQ7U49_-eX8FGhCJDW" version="15.7.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1715" dy="483" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -272,7 +272,7 @@
             <mxPoint x="282.1399999999999" y="741.2" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="YizEBydikRzrBxmlW1h5-71" value="asObject" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" parent="1" source="YizEBydikRzrBxmlW1h5-40" edge="1">
+        <mxCell id="YizEBydikRzrBxmlW1h5-71" value="asObject(response, type)" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" parent="1" source="YizEBydikRzrBxmlW1h5-40" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="282" y="765.005" as="sourcePoint" />
             <mxPoint x="275" y="770" as="targetPoint" />
@@ -346,7 +346,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="YizEBydikRzrBxmlW1h5-89" value="GetMasterReportJob" style="verticalAlign=bottom;endArrow=block;entryX=0.062;entryY=0.002;shadow=0;strokeWidth=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
+        <mxCell id="YizEBydikRzrBxmlW1h5-89" value="GetMasterReportJob(rest, customerId, id)" style="verticalAlign=bottom;endArrow=block;entryX=0.062;entryY=0.002;shadow=0;strokeWidth=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-75.62" y="907" as="sourcePoint" />
             <mxPoint x="625.9999999999999" y="907.6199999999999" as="targetPoint" />
@@ -362,16 +362,6 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-72.15999999999985" y="1201.0000000000002" as="targetPoint" />
             <mxPoint x="632.1699999999992" y="1200" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="YizEBydikRzrBxmlW1h5-98" value="withAuthInfo(request, path, customerId, apiKey, secretKey)" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" parent="1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="286" y="1272" as="sourcePoint" />
-            <mxPoint x="286" y="1292" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="336" y="1272" />
-              <mxPoint x="336" y="1292" />
-            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="YizEBydikRzrBxmlW1h5-99" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
@@ -393,7 +383,7 @@
             <mxPoint x="984.3299999999995" y="1338.5" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="YizEBydikRzrBxmlW1h5-104" value="asObject" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" parent="1" edge="1">
+        <mxCell id="YizEBydikRzrBxmlW1h5-104" value="asObject(response, type)" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="629.5" y="1140" as="sourcePoint" />
             <mxPoint x="275" y="1140" as="targetPoint" />
@@ -450,7 +440,7 @@
         <mxCell id="YizEBydikRzrBxmlW1h5-114" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
           <mxGeometry x="625" y="1511" width="10" height="310" as="geometry" />
         </mxCell>
-        <mxCell id="YizEBydikRzrBxmlW1h5-115" value="createDeltaMasterReportJob" style="verticalAlign=bottom;endArrow=block;entryX=0.062;entryY=0.002;shadow=0;strokeWidth=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="YizEBydikRzrBxmlW1h5-114" edge="1">
+        <mxCell id="YizEBydikRzrBxmlW1h5-115" value="createDeltaMasterReportJob(rest, customerId, item, fromTime)" style="verticalAlign=bottom;endArrow=block;entryX=0.062;entryY=0.002;shadow=0;strokeWidth=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="YizEBydikRzrBxmlW1h5-114" edge="1">
           <mxGeometry x="0.7844" relative="1" as="geometry">
             <mxPoint x="-76" y="1511" as="sourcePoint" />
             <mxPoint x="624" y="1511.005" as="targetPoint" />
@@ -495,7 +485,7 @@
             <mxPoint x="281.1399999999994" y="1732.1999999999998" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="YizEBydikRzrBxmlW1h5-124" value="asObject" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" parent="1" edge="1">
+        <mxCell id="YizEBydikRzrBxmlW1h5-124" value="asObject(response, type)" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="628.5" y="1761" as="sourcePoint" />
             <mxPoint x="274" y="1761" as="targetPoint" />
@@ -581,7 +571,7 @@
             <mxPoint x="281.1399999999999" y="2108.2" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="YizEBydikRzrBxmlW1h5-145" value="asObject" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" parent="1" edge="1">
+        <mxCell id="YizEBydikRzrBxmlW1h5-145" value="asObject(response, type)" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="628.5" y="2137" as="sourcePoint" />
             <mxPoint x="274.00000000000045" y="2137" as="targetPoint" />
@@ -589,12 +579,6 @@
         </mxCell>
         <mxCell id="YizEBydikRzrBxmlW1h5-146" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
           <mxGeometry x="269" y="2137" width="10" height="32" as="geometry" />
-        </mxCell>
-        <mxCell id="YizEBydikRzrBxmlW1h5-147" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=none;endFill=0;" parent="1" target="YizEBydikRzrBxmlW1h5-146" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="274" y="3007" as="targetPoint" />
-            <mxPoint x="272.83333333333394" y="2117" as="sourcePoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="YizEBydikRzrBxmlW1h5-148" value="return" style="verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;shadow=0;strokeWidth=1;exitX=1.214;exitY=0.991;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -667,6 +651,16 @@
         </mxCell>
         <mxCell id="YizEBydikRzrBxmlW1h5-170" value="Object to Json Format" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.rectCallout;dx=30;dy=15;boundedLbl=1;dashed=1;" vertex="1" parent="1">
           <mxGeometry x="340" y="409" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YizEBydikRzrBxmlW1h5-98" value="withAuthInfo(request, path, customerId, apiKey, secretKey)" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="286" y="1272" as="sourcePoint" />
+            <mxPoint x="286" y="1292" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="336" y="1272" />
+              <mxPoint x="336" y="1292" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
