@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-11-10T14:24:45.959Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="3yO0qJ36kWq9XYlWTJYh" version="15.7.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-10T14:28:26.371Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="AvwsPnz9XfcMkWR8lTsR" version="15.7.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="1504" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+    <mxGraphModel dx="1826" dy="699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -250,6 +250,16 @@
             <mxPoint x="-540" y="3510" as="sourcePoint" />
             <mxPoint x="248.94000000000005" y="3510.3500000000004" as="targetPoint" />
             <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nArouSWhvoMLpXvqZv9y-15" value="println(dailyStat)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="QkMDThP16RGxQZJ2cedM-5" target="eKaC_4Q6Im7ZmwUMc1Ti-3">
+          <mxGeometry x="0.9058" relative="1" as="geometry">
+            <mxPoint x="249.5" y="1150" as="sourcePoint" />
+            <mxPoint x="-850" y="1150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="1150" />
+            </Array>
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="QkMDThP16RGxQZJ2cedM-7" value="stats" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
