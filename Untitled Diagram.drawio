@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-11-10T14:28:26.371Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="AvwsPnz9XfcMkWR8lTsR" version="15.7.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-10T14:30:16.222Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36" etag="lFkFsyvCg_tNoTCzgTzA" version="15.7.0" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="1826" dy="699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+    <mxGraphModel dx="1504" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -258,6 +258,16 @@
             <mxPoint x="-850" y="1150" as="targetPoint" />
             <Array as="points">
               <mxPoint x="160" y="1150" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nArouSWhvoMLpXvqZv9y-17" value="println(dailyStatWithTimeRange)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="QkMDThP16RGxQZJ2cedM-5">
+          <mxGeometry x="0.8195" relative="1" as="geometry">
+            <mxPoint x="247" y="1590" as="sourcePoint" />
+            <mxPoint x="-750" y="1590" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="157.5" y="1590" />
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
@@ -558,7 +568,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="4GVTrCW4khlCdeunZ2BW-1" value="" style="points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
-          <mxGeometry x="1125" y="1320" width="10" height="350" as="geometry" />
+          <mxGeometry x="1125" y="1320" width="10" height="360" as="geometry" />
         </mxCell>
         <mxCell id="QkMDThP16RGxQZJ2cedM-44" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="1" vertex="1">
           <mxGeometry x="725" y="2041" width="10" height="30" as="geometry" />
