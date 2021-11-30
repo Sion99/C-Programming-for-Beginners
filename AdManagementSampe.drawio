@@ -1,1 +1,67 @@
-<mxfile host="app.diagrams.net" modified="2021-11-30T09:42:49.874Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="1o9xiZ7VopUtHdT6J0C4" version="15.7.2" type="github"><diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">7ZjLcpswFIafhmU6RhgbL2Pn0kU6yTSdSbOU4QTUCMQIEeM+fSUQYC5OcGrctNOVpV8XxP/pnMPYsFZhds1xHHxhHlADTbzMsC4MhEyELPmjlK1WTAcVis+Jp7VauCc/QYsTrabEg6QxUTBGBYmbosuiCFzR0DDnbNOc9sRo86kx9qEj3LuYdtUH4omgUB17UuufgfhB+WRzokdCXE7WQhJgj212JOvSsFacMVG0wmwFVLlX+lKsu9ozWh2MQySGLLCidHmV8YW7vZnE0e3DN4Svz/QuL5im+oUN6/x2/UNZWZxabEsr5AvEqpmG9IY8ASWR7C1j4CQEAVyOUC3f1dpSghFYamrczPuU4jgh63zbiVQ4uClPyAt8haTgn6ssjTzwdK8yL+8Izp4rHGpT/RbABWR77TEr0+V1BSYPyLdySnVXNSd9Ux3d3dTUK7bBDnGrFLG+aX61dQ1DNjSPA9igLps2kpiRSOTPtZeGfdHCwbgImM8iTHeBHN/Y/Tdrr9tTu2H2vM/srtfmYiyvrY7XHkliLNyg47kyg8gEcU6JH0lpzYRgYe4e5uJc5RzlvdxKahB5pbKmzH0up+lE5wwlAF4nTQ3xXyZLzH14bR7q58SBYiFjsplQe2zXS+/UTaz5npn9gMsdEpZyF/SiFrvqFO/HOf2HQ8du5qkqb70RO85YoWP/LyFZqxR8mBIy+6vjwD6khPSa3VNCZmN5Pe94zUGkPBpeQHaKBYtBDi09nAS5z2YxvFM2ICPiuzZdtR9V+9PCfndFKVLy25dpWEUZFDe/WWTQvHkFkDVrblEcdbQq4xzho6HnA0G6xrcVWtV5PCTSDgeLBoKd/SmwnaAd+fNh0QEr0dE1lniOAtY8EdihETs9Gdhps0KiduUbGWxZEU6dpM2TJenph4vlNnJ7fqQkLbv1vyfF9PpPKOvyFw==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-11-30T09:53:17.934Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="MslS91Qk1_5A7ErpNOZl" version="15.7.2" type="github">
+  <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="4100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t21uhHJnaAxaSKALmI4W-7" value=":AdManagementSample" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="80" height="3880" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-8" value=":PropertiesLoader" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="80" width="80" height="3880" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-9" value=":RestClient" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="80" width="80" height="3880" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-10" value=":Anonymous" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="80" width="80" height="3880" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-11" value=":CustomerLinks" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="760" y="80" width="80" height="3880" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-12" value=":Signatures" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="920" y="80" width="80" height="3880" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-13" value=":Campaigns" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="80" width="80" height="3880" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-14" value=":Channels" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="80" width="80" height="3880" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-15" value="Adgroups" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="80" width="80" height="3880" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-16" value="Channel" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1560" y="80" width="80" height="3880" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-17" value="Adgroup" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="80" width="80" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-18" value="Schedules" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1880" y="80" width="80" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-19" value="ScheduleBuilder" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="80" width="80" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-20" value=":Ad" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="2200" y="80" width="80" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-21" value=":Ads" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="2360" y="80" width="80" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-22" value=":Keyword" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="2520" y="80" width="80" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-23" value=":Keywords" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="2680" y="80" width="80" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-24" value=":AdExtension" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="2840" y="80" width="80" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="t21uhHJnaAxaSKALmI4W-25" value=":AdExtensions" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="3000" y="80" width="80" height="300" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
