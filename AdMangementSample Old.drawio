@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-01T13:01:25.016Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="vqIAv5D6RLSKN1J6vsUv" version="15.8.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-01T13:02:41.141Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="L1tOd_hfefZjmkciiRAu" version="15.8.7" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="1402" dy="705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="4100" math="0" shadow="0">
       <root>
@@ -151,7 +151,7 @@
         <mxCell id="ZcE_kDsura3HNuptTC8Y-41" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="t21uhHJnaAxaSKALmI4W-12" vertex="1">
           <mxGeometry x="35" y="3840" width="10" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="t21uhHJnaAxaSKALmI4W-13" value=":Campaigns" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+        <mxCell id="t21uhHJnaAxaSKALmI4W-13" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=0;" parent="1" vertex="1">
           <mxGeometry x="1080" y="80" width="80" height="8560" as="geometry" />
         </mxCell>
         <mxCell id="RSPn8jp4cOme0zsPs-lQ-34" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="t21uhHJnaAxaSKALmI4W-13" vertex="1">
@@ -264,13 +264,13 @@
             <mxPoint x="-580" y="2087" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="t21uhHJnaAxaSKALmI4W-14" value=":Channels" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+        <mxCell id="t21uhHJnaAxaSKALmI4W-14" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=0;" parent="1" vertex="1">
           <mxGeometry x="1240" y="80" width="80" height="8560" as="geometry" />
         </mxCell>
         <mxCell id="RSPn8jp4cOme0zsPs-lQ-74" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="t21uhHJnaAxaSKALmI4W-14" vertex="1">
           <mxGeometry x="30.000000000000142" y="1560" width="20" height="330" as="geometry" />
         </mxCell>
-        <mxCell id="t21uhHJnaAxaSKALmI4W-15" value=":Adgroups" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+        <mxCell id="t21uhHJnaAxaSKALmI4W-15" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=0;" parent="1" vertex="1">
           <mxGeometry x="1400" y="80" width="80" height="8560" as="geometry" />
         </mxCell>
         <mxCell id="RSPn8jp4cOme0zsPs-lQ-90" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="t21uhHJnaAxaSKALmI4W-15" vertex="1">
@@ -1889,6 +1889,15 @@
         </mxCell>
         <mxCell id="iqze9EmBJgqLhUWoQqhc-2" value=":RestClient" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="445" y="40" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iqze9EmBJgqLhUWoQqhc-3" value=":Campaigns" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1085" y="40" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iqze9EmBJgqLhUWoQqhc-4" value=":Channels" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1246" y="40" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iqze9EmBJgqLhUWoQqhc-5" value=":Adgroups" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1404" y="40" width="70" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
