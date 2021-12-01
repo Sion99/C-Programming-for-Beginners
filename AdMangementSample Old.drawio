@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-01T13:53:56.745Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="sleci7EmjmMbjz0yTqMF" version="15.8.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-01T13:54:51.241Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="Eq1mskifHux-Z4brjzc3" version="15.8.8" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="2770" dy="1323" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="8700" math="0" shadow="0">
+    <mxGraphModel dx="1185" dy="628" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="8700" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -891,7 +891,7 @@
             <mxPoint x="170" y="556" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RSPn8jp4cOme0zsPs-lQ-22" value="list(rest, managerCustomerId, &quot;MYCLIENTS&quot;)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" parent="1" target="RSPn8jp4cOme0zsPs-lQ-21" edge="1">
+        <mxCell id="RSPn8jp4cOme0zsPs-lQ-22" value="list(rest, customerId, type)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" parent="1" target="RSPn8jp4cOme0zsPs-lQ-21" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="170" y="537.9999999999998" as="sourcePoint" />
           </mxGeometry>
@@ -914,8 +914,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="RSPn8jp4cOme0zsPs-lQ-30" value="of(timestamp, method, resource, key)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" parent="1" target="RSPn8jp4cOme0zsPs-lQ-29" edge="1">
-          <mxGeometry relative="1" as="geometry">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
             <mxPoint x="500" y="656" as="sourcePoint" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="RSPn8jp4cOme0zsPs-lQ-31" value="Restclient.of" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;rounded=0;" parent="1" source="RSPn8jp4cOme0zsPs-lQ-29" edge="1">
@@ -934,7 +935,7 @@
             <mxPoint x="159.32352941176464" y="920" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RSPn8jp4cOme0zsPs-lQ-39" value="withAuthInfo" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=1;exitY=0.95;rounded=0;" parent="1" source="RSPn8jp4cOme0zsPs-lQ-37" edge="1">
+        <mxCell id="RSPn8jp4cOme0zsPs-lQ-39" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=1;exitY=0.95;rounded=0;" parent="1" source="RSPn8jp4cOme0zsPs-lQ-37" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1119.4999999999995" y="1112" as="targetPoint" />
           </mxGeometry>
@@ -960,7 +961,7 @@
             <mxPoint x="550" y="1160" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RSPn8jp4cOme0zsPs-lQ-78" value="callback" style="html=1;verticalAlign=bottom;endArrow=block;entryX=1;entryY=0;rounded=0;" parent="1" source="RSPn8jp4cOme0zsPs-lQ-74" target="RSPn8jp4cOme0zsPs-lQ-66" edge="1">
+        <mxCell id="RSPn8jp4cOme0zsPs-lQ-78" value="get(path, customerId)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=1;entryY=0;rounded=0;" parent="1" source="RSPn8jp4cOme0zsPs-lQ-74" target="RSPn8jp4cOme0zsPs-lQ-66" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="545.5799999999999" y="1679.17" as="sourcePoint" />
           </mxGeometry>
@@ -970,12 +971,12 @@
             <mxPoint x="555.5799999999999" y="1879.17" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RSPn8jp4cOme0zsPs-lQ-77" value="withAuthInfo" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=1;exitY=0.95;rounded=0;" parent="1" source="RSPn8jp4cOme0zsPs-lQ-66" edge="1">
+        <mxCell id="RSPn8jp4cOme0zsPs-lQ-77" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=1;exitY=0.95;rounded=0;" parent="1" source="RSPn8jp4cOme0zsPs-lQ-66" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1279.4999999999995" y="1831.17" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RSPn8jp4cOme0zsPs-lQ-92" value="listByCampaignId" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" parent="1" target="RSPn8jp4cOme0zsPs-lQ-90" edge="1">
+        <mxCell id="RSPn8jp4cOme0zsPs-lQ-92" value="listByCampaignId(rest, customerId, campaignId)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" parent="1" target="RSPn8jp4cOme0zsPs-lQ-90" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="159.32352941176464" y="2000.000000000001" as="sourcePoint" />
           </mxGeometry>
