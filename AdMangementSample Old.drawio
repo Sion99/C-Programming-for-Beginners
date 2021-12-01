@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-01T14:09:57.947Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="WefWEJk3tCv1qK52g900" version="15.8.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-01T14:11:02.184Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="udyM2LJFufJDz7DLg3T9" version="15.8.7" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="2374" dy="1134" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="8700" math="0" shadow="0">
+    <mxGraphModel dx="950" dy="454" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="8700" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,7 +13,7 @@
         <mxCell id="ojJPA6o6ByZG6HDqNjk_-9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="t21uhHJnaAxaSKALmI4W-7" vertex="1">
           <mxGeometry x="40" y="5315" width="20" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="t21uhHJnaAxaSKALmI4W-8" value=":PropertiesLoader" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+        <mxCell id="t21uhHJnaAxaSKALmI4W-8" value="&lt;font style=&quot;font-size: 10px&quot;&gt;:PropertiesLoader&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="280" y="80" width="80" height="8560" as="geometry" />
         </mxCell>
         <mxCell id="t21uhHJnaAxaSKALmI4W-35" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="t21uhHJnaAxaSKALmI4W-8" vertex="1">
@@ -111,7 +111,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="t21uhHJnaAxaSKALmI4W-11" value=":CustomerLinks" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+        <mxCell id="t21uhHJnaAxaSKALmI4W-11" value="&lt;font style=&quot;font-size: 11px&quot;&gt;:CustomerLinks&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="760" y="80" width="80" height="8560" as="geometry" />
         </mxCell>
         <mxCell id="RSPn8jp4cOme0zsPs-lQ-21" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="t21uhHJnaAxaSKALmI4W-11" vertex="1">
@@ -1839,7 +1839,7 @@
             <mxPoint x="2230.75" y="4574" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="iqze9EmBJgqLhUWoQqhc-1" value=":AdManagementSample" style="shape=umlBoundary;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="iqze9EmBJgqLhUWoQqhc-1" value="&lt;font style=&quot;font-size: 11px&quot;&gt;:AdManagement&lt;br&gt;Sample&lt;/font&gt;" style="shape=umlBoundary;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="103" y="40" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="iqze9EmBJgqLhUWoQqhc-2" value=":RestClient" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" parent="1" vertex="1">
