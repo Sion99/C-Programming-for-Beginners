@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-01T13:39:19.145Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="PkC6TQp9WtqecyjFNHFo" version="15.8.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-01T13:39:43.084Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="hUwkiQ5tvDChucXVpHDH" version="15.8.7" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
     <mxGraphModel dx="673" dy="604" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="13700" math="0" shadow="0">
       <root>
@@ -1353,12 +1353,12 @@
             <mxPoint x="159.32352941176464" y="2000.000000000001" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RSPn8jp4cOme0zsPs-lQ-93" value="withAuthInfo" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=1;exitY=0.95;rounded=0;entryX=-0.143;entryY=0.619;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="RSPn8jp4cOme0zsPs-lQ-82" target="RSPn8jp4cOme0zsPs-lQ-90" edge="1">
+        <mxCell id="RSPn8jp4cOme0zsPs-lQ-93" value="withAuthInfo(request, path, customerId, apiKey, secretKey)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=1;exitY=0.95;rounded=0;entryX=-0.143;entryY=0.619;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="RSPn8jp4cOme0zsPs-lQ-82" target="RSPn8jp4cOme0zsPs-lQ-90" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1119.5000000000002" y="2202.0000000000005" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RSPn8jp4cOme0zsPs-lQ-94" value="callback" style="html=1;verticalAlign=bottom;endArrow=block;entryX=1.357;entryY=0.008;rounded=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="RSPn8jp4cOme0zsPs-lQ-82" edge="1">
+        <mxCell id="RSPn8jp4cOme0zsPs-lQ-94" value="get(path, customerId)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=1.357;entryY=0.008;rounded=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="RSPn8jp4cOme0zsPs-lQ-82" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1430" y="2051" as="sourcePoint" />
             <mxPoint x="810" y="2040" as="targetPoint" />
