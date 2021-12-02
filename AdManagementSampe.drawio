@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-02T11:53:25.686Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="4P76vfQW1gkLV89I-z2M" version="15.8.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-02T12:03:20.260Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="qy-YGSeUa9LNMh3f3aAb" version="15.8.8" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
-    <mxGraphModel dx="1033" dy="933" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="13700" math="0" shadow="0">
+    <mxGraphModel dx="1662" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="13700" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -113,7 +113,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="t21uhHJnaAxaSKALmI4W-11" value=":CustomerLinks" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+        <mxCell id="t21uhHJnaAxaSKALmI4W-11" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;size=0;" parent="1" vertex="1">
           <mxGeometry x="760" y="80" width="80" height="13400" as="geometry" />
         </mxCell>
         <mxCell id="RSPn8jp4cOme0zsPs-lQ-21" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="t21uhHJnaAxaSKALmI4W-11" vertex="1">
@@ -2907,6 +2907,9 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="567.91" y="6570" as="sourcePoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="jvdcf0gPWjsp7kgojdw7-1" value=":Customer&lt;br&gt;Links" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="765" y="50" width="70" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
