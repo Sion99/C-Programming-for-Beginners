@@ -1,6 +1,6 @@
 --Lab#5-1 & Lab #5-2
-SQL> grant all privileges to university;
-SQL> conn university/comp322
+grant all privileges to university;
+conn university/comp322
 
 DROP TABLE DEPARTMENT CASCADE CONSTRAINT;
 CREATE TABLE DEPARTMENT(
@@ -70,7 +70,7 @@ ON DELETE SET NULL;
 --Lab#5-2
 INSERT INTO DEPARTMENT VALUES ('Headquarters', 1, '888665555', TO_DATE('1981-06-19', 'yyyy-mm-dd'));
 INSERT INTO EMPLOYEE VALUES ('James', 'E', 'Borg', '888665555', TO_DATE('1937-11-10', 'yyyy-mm-dd'), '450 Stone, Houston, TX', 'M', 55000, NULL, 1);
-INSERT INTO DEPARTMENT VALUES ('Administration', 4, '987654321', TO__DATE('1995-01-01, 'yyyy-mm-dd'));
+INSERT INTO DEPARTMENT VALUES ('Administration', 4, '987654321', TO__DATE('1995-01-01', 'yyyy-mm-dd'));
 INSERT INTO EMPLOYEE VALUES ('Jennifer', 'S', 'Wallace', '987654321', TO_DATE('1941-06-28', 'yyyy-mm-dd'), '291 Berry, Bellaire, TX', 'F', 43000, '888665555', 4);
 INSERT INTO DEPARTMENT VALUES ('Research', 5, '333445555', TO_DATE('1988-05-22', 'yyyy-mm-dd'));
 INSERT INTO EMPLOYEE VALUES ('Franklin', 'T', 'Wong', '333445555', TO_DATE('1968-01-19', 'yyyy-mm-dd'), '638 Voss, Houston, TX', 'M', 40000, '888665555', 5);
@@ -118,4 +118,5 @@ insert into works_on values ('987654321', 30, 20.0);
 insert into works_on values ('987654321', 20, 15.0);
 insert into works_on values ('888665555', 20, NULL);
 
+commit;
 
