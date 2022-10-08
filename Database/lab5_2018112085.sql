@@ -14,47 +14,47 @@ CREATE TABLE DEPARTMENT(
 
 DROP TABLE EMPLOYEE CASCADE CONSTRAINT;
 CREATE TABLE EMPLOYEE(
-	Fname	Varchar(15)	not null,
-	Minit	char,
-	Lname	Varchar(15),
-	Ssn	Char(9)	not null,
-	Bdate	date,
-	Address	Varchar(30),
-	Sex	Char,
-	Salary	Number(10,2),
+	Fname		Varchar(15)	not null,
+	Minit		char,
+	Lname		Varchar(15),
+	Ssn		Char(9)		not null,
+	Bdate		date,
+	Address		Varchar(30),
+	Sex		Char,
+	Salary		Number(10,2),
 	Super_ssn	Char(9),
-	Dno	Number default 1	not null,
+	Dno		Number default 1	not null,
 	Primary key (Ssn)
 );
 
 create table DEPT_LOCATIONS(
-  Dnumber    INT     NOT NULL,
-  Dlocation  Varchar(15)     NOT null,
+  Dnumber    	INT     	NOT NULL,
+  Dlocation  	Varchar(15)     NOT null,
   Primary key (Dnumber, Dlocation),
   Foreign Key (Dnumber) references Department(Dnumber));
 
  create table PROJECT(
-  Pname      varchar(15)     not null,
-  Pnumber    int     not null,
+  Pname      varchar(15)	not null,
+  Pnumber    int		not null,
   Plocation  varchar(15),
-  Dnum       int     not null,
+  Dnum       int   	  	not null,
   primary key(Pnumber),
   unique(Pname),
   foreign Key(Dnum) references department(Dnumber));
 
  create table WORKS_ON(
-  Essn       char(9) not null,
-  Pno        int     not null,
+  Essn       char(9) 		not null,
+  Pno        int    		not null,
   Hours      decimal(3,1),
   Primary key(Essn, Pno),
   Foreign key(Essn) references employee(ssn),
   foreign key(Pno) references project(Pnumber));
 
 create table DEPENDENT(
-  Essn       char(9) not null,
-  Dependent_name     varchar(15)     not null
-  Sex        char,
-  Bdate      date,
+  Essn       		char(9) 	not null,
+  Dependent_name    	varchar(15)     not null
+  Sex        		char,
+  Bdate      		date,
   Relationship       varchar(8),
   Primary key(Essn, Dependent_name),
   Foreign key(Essn) references Employee(Ssn));
