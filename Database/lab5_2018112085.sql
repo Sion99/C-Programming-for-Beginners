@@ -120,3 +120,12 @@ insert into works_on values ('888665555', 20, NULL);
 
 commit;
 
+--Lab#5-3
+
+select E.Fname, E.Lname
+from Employee E, Works_on W
+where E.Dno = 5
+and E.salary <= 30000
+and W.Pno = 1
+order by E.Lname;
+
