@@ -142,4 +142,44 @@ where D.Mgr_ssn = '987654321';
  where P.Pname = 'Reorganization'
  and W.Hours >= 1
  order by W.Hours DESC;
- 
+
+select distinct E.Fname, E.Lname, W.Hours
+from Employee E, Works_on W, Project P
+where P.Pname LIKE 'Product%'
+and W.Hours >= 10
+order by W.Hours;
+
+select E.Lname, E.Fname, Dp.Sex, Dp.Dependent_name, Dp.relationship
+from Employee E, Dependent Dp
+where E.Super_ssn = '333445555';
+
+--Lab#5-4
+delete from Dependent where Essn = '123456789'
+and relationship = 'Spouse';
+--1행이 삭제되었습니다.
+delete from department where Dnumber = 5;
+--*
+--1행에 오류:
+--ORA-02292: 무결성 제약조건(UNIVERSITY.SYS_C007594)이 위배되었습니다- 자식
+--레코드가 발견되었습니다
+delete from works_on where Pno = 30
+and Hours >= 50;
+--0행이 삭제되었습니다.
+
+rollback;
+
+--Lab#5-5
+
+update project set plocation = 'Daegu' where Dnum = 4;
+
+--2 행이 업데이트되었습니다.
+
+
+
+update employee set address = '80 Daehakro Daegu' where Dno = 5;
+
+--4 행이 업데이트되었습니다.
+
+rollback;
+
+--롤백이 완료되었습니다.
