@@ -82,7 +82,7 @@ insert into employee values ('Joyce', 'A', 'English', '453453453', TO_DATE('1972
 insert into employee values ('Ahmad', 'V', 'Jabbar', '987987987', TO_DATE('1969-03-29', 'yyyy-mm-dd'), '980 Dallas, Houston, TX', 'M', 25000, '987654321', 4);
 
 INSERT INTO DEPARTMENT VALUES ('Headquarters', 1, '888665555', TO_DATE('1981-06-19', 'yyyy-mm-dd'));
-INSERT INTO DEPARTMENT VALUES ('Administration', 4, '987654321', TO__DATE('1995-01-01', 'yyyy-mm-dd'));
+INSERT INTO DEPARTMENT VALUES ('Administration', 4, '987654321', TO_DATE('1995-01-01', 'yyyy-mm-dd'));
 INSERT INTO DEPARTMENT VALUES ('Research', 5, '333445555', TO_DATE('1988-05-22', 'yyyy-mm-dd'));
 
 insert into dept_locations values (1, 'Houston');
