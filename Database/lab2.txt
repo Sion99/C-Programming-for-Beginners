@@ -1,0 +1,109 @@
+lab 2-1
+
+What is the values of the TNAME column belonging to the row with view in the TABTYPE column from the output seen after executing "SELECT * from tab?"
+-> EMP_DETAILS_VIEW
+
+lab 2-2
+
+1. How many columns in the JOBS table
+-> 4 columns
+
+2. Which column(s) in the JOBS table are not nullable?
+-> JOB_ID, JOB_TITLE are not nullable
+
+3. What are the minimum value in MIN_SALARY column and the maximum value in MAX_SALARY column in the JOBS table?
+-> minimum value in MIN_SALARY : 2008
+-> maximum value in MAX_SALARY : 40000
+
+4. How many (different) job titles in JOB_TITLE column in the JOBS table?
+-> 19
+
+5. State how VARCHAR2 is different from VARCHAR on Oracle
+-> varchar and varchar2 are synoymous. Varchar equals to Varchar2.
+
+lab 2-3
+
+1. Write a CREATE TABLE statement for Course table
+
+2. Write a CREATE TABLE statement for Pre_requisite table.
+
+3. Write a CREATE TABLE statement for Section table.
+
+4. Write a CREATE TABLE statement for Grade_Report table.
+
+
+SQL> CREATE table Course
+  2  (
+  3     Course_name     VARCHAR(30),
+  4     Course_number   VARCHAR(10),
+  5     Credit_hours    NUMBER,
+  6     Department      VARCHAR(5)
+  7  );
+
+테이블이 생성되었습니다.
+
+SQL> CREATE table Pre_requisite
+  2  (
+  3     Course_number   VARCHAR(10),
+  4     Prerequisite_number     VARCHAR(10)
+  5  );
+
+테이블이 생성되었습니다.
+
+SQL> CREATE table Section
+  2  (
+  3     Section_identifier      NUMBER,
+  4     Course_number   VARCHAR(10),
+  5     Semester        VARCHAR(10),
+  6     Year    NUMBER,
+  7     Instructor      VARCHAR(10)
+  8  )
+  9  ;
+
+테이블이 생성되었습니다.
+
+SQL> CREATE table Grade_Report
+  2  (
+  3     Student_number  NUMBER,
+  4     Section_identifier      NUMBER,
+  5     Grade   VARCHAR(3)
+  6  );
+
+테이블이 생성되었습니다.
+
+
+lab 2-5
+1) 
+SQL> select * from Course;
+
+COURSE_NAME                    COURSE_NUM CREDIT_HOURS DEPAR
+------------------------------ ---------- ------------ -----
+Intro to Computer Science      CS1310                4 CS
+Data Structures                CS3320                4 CS
+Discrete Mathematics           MATH2410              3 MATH
+Database                       CS3380                3 CS
+
+2) 
+SQL> select Section_Identifier, Course_Number From Section;
+
+SECTION_IDENTIFIER COURSE_NUM
+------------------ ----------
+                85 MATH2410
+                92 CS1310
+               102 CS3320
+               112 MATH2410
+               119 CS1310
+               135 CS3380
+
+6 행이 선택되었습니다.
+
+3)
+SQL> select Prerequisite_Number, Course_Number from Pre_requisite;
+
+PREREQUISI COURSE_NUM
+---------- ----------
+CS3320     CS3380
+MATH2410   CS3380
+CS1310     CS3320
+
+3
