@@ -56,7 +56,7 @@ DROP TABLE WORKS_ON CASCADE CONSTRAINT;
 DROP TABLE DEPENDENT CASCADE CONSTRAINT;
 create table DEPENDENT(
   Essn       char(9) not null,
-  Dependent_name     varchar(15)     not null
+  Dependent_name     varchar(15)     not null,
   Sex        char,
   Bdate      date,
   Relationship       varchar(8),
