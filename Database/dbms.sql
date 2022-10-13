@@ -1,71 +1,68 @@
-create table academy(
-    academy_name    varchar(30) not null,
-    unique_academy_ID number  not null,
-    primary key (unique_academy_ID),
-    unique(academy_name)
+create table institute(
+    institute_name    varchar2(30) not null,
+    primary key (institute_name)
 );
 
-create table volume(
-    volume_num  number  not null,
-    volume_title    varchar(50) not null,
-    volume_date number  not null,
-    aca_ID    number  not null,
+create table academy(
+    academy_name    varchar2(1000) not null,
+    academy_date date  not null,
+    ins_name    varchar(30)  not null,
     
-    primary key (volume_num),
-    foreign key (aca_ID) references academy (unique_academy_ID)
+    primary key (academy_name),
+    foreign key (ins_name) references institute (institute_name)
 );
 
 create table journal(
-    keyword varchar(50),
     unique_journal_ID   number  not null,
     views   number,
-    title  varchar(500),
-    open_to varchar(50),
+    title  varchar2(500),
+    open_to varchar2(50),
     publication_date    date    not null,
-    cited_by    varchar(1000),
-    citing  varchar(1000),
+    cited_by    number,
+    citing  varchar2(1000),
     vol_num   number  not null,
+    aca_name varchar2(50)   not null,
     primary key(unique_journal_ID),
-    foreign key (vol_num) references volume (volume_num)
+    foreign key (aca_name) references academy (academy_name)
 );
 
-create table author(
-    unique_author_id    number  not null,
-    name varchar(50) not null,
-    degree    varchar(50),
-    primary key (unique_author_id)
+create table citing(
+    j_id number not null,
+    citing_journal_num  number not null,
+    citing_journal_title   varchar2(100)    not null,
+    primary key (citing_journal_num),
+    foreign key (j_id) references journal (unique_journal_ID)
 );
 
-create table writes(
-    auth_id number  not null,
-    j_id    number  not null,
-    foreign key (auth_id) references author (unique_author_id),
-    foreign key (j_id) references journal (unique_journal_Id)
+create table keyword(
+    j_id number not null,
+    keyword_num number not null,
+    keyword_text    varchar2(50)    not null,
+    primary key (keyword_num),
+    foreign key (j_id) references journal (unique_journal_id)
 );
+
+
 
 create table subscriber(
     subscriber_id   number  not null,
     validation_due  date    not null,
     starting_date   date    not null,
-    subscriber_type varchar(30) not null,
-    Fname   varchar(50) not null,
-    Lname   varchar(50) not null,
+    subscriber_type varchar2(30) not null,
+    name   varchar2(100) not null,
     primary key (subscriber_id)
 );
 
 create table manages(
-    aca_ID  number  not null,
+    ins_name  varchar2(30)  not null,
     sub_id  number  not null,
-    foreign key (aca_ID) references academy (unique_academy_ID),
+    foreign key (ins_name) references institute (institute_name),
     foreign key (sub_id) references subscriber (subscriber_id)
 );
 
 create table rating(
-    rating_id   number  not null,
     star    number,
-    written_by  varchar(50) not null,
     written_date    date    not null,
-    average_rate    number,
     sub_id  number  not null,
     j_id    number  not null,
     foreign key (sub_id) references subscriber (subscriber_id),
@@ -74,20 +71,29 @@ create table rating(
 
 create table academyworker(
     unique_worker_id    number  not null,
-    Fname   varchar(50) not null,
-    Lname   varchar(50) not null,
-    department  varchar(50) not null,
-    aca_ID  number  not null,
+    Fname   varchar2(50) not null,
+    Lname   varchar2(50) not null,
+    department  varchar2(50) not null,
+    aca_name  varchar2(1000)  not null,
     primary key (unique_worker_id),
-    foreign key (aca_ID) references academy (unique_academy_ID)
+    foreign key (aca_name) references academy (academy_name)
 );
 
 create table professor(
     unique_professor_ID number not null,
-    Fname   varchar(50) not null,
-    Lname   varchar(50) not null,
-    degree  varchar(100) not null,
-    primary key (unique_professor_ID)
+    Fname   varchar2(50) not null,
+    Lname   varchar2(50) not null,
+    degree  varchar2(100) not null,
+    judging_academy varchar2(100),
+    primary key (unique_professor_ID),
+    foreign key (judging_academy) references academy (academy_name)
+);
+
+create table writes(
+    p_id number  not null,
+    j_id    number  not null,
+    foreign key (p_id) references professor (unique_professor_id),
+    foreign key (j_id) references journal (unique_journal_Id)
 );
 
 create table proposal(
@@ -99,9 +105,9 @@ create table proposal(
 
 create table judge(
     unique_judge_id number  not null,
-    Fname   varchar(50) not null,
-    Lname   varchar(50) not null,
-    degree  varchar(100) not null,
+    Fname   varchar2(50) not null,
+    Lname   varchar2(50) not null,
+    degree  varchar2(100) not null,
     primary key (unique_judge_id)
 );
 
@@ -112,10 +118,10 @@ create table accept(
     foreign key (judge_id) references judge (unique_judge_id)
 );
 
-create review(
+create table review(
     unique_review_id    number  not null,
     review_date     date    not null,
-    review_text        varchar(1000)    not null,
+    review_text        varchar2(1000)    not null,
     j_id    number  not null,
     primary key(unique_review_id),
     foreign key (j_id) references journal (unique_journal_ID)
