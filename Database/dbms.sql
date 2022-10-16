@@ -5,7 +5,7 @@ create table institute(
 
 create table academy(
     academy_name    varchar2(1000) not null,
-    academy_date date  not null,
+    academy_foundation_date date  not null,
     ins_name    varchar(30)  not null,
 
     primary key (academy_name),
@@ -31,7 +31,6 @@ create table keyword(
     primary key (j_id, keyword_text),
     foreign key (j_id) references journal (unique_journal_id)
 );
-
 
 
 create table subscriber(
@@ -81,39 +80,46 @@ create table manages(
     foreign key (sub_id) references subscriber (subscriber_id)
 );
 
-create table professor(
-    unique_professor_ID number not null,
+create table author(
+    unique_author_ID number not null,
     Fname   varchar2(50) not null,
     Lname   varchar2(50) not null,
     judging_academy varchar2(100),
-    primary key (unique_professor_ID),
+    primary key (unique_author_ID),
     foreign key (judging_academy) references academy (academy_name)
 );
 
+create table write(
+    a_id    number  not null,
+    j_id    number  not null,
+    foreign key (a_id) references author (unique_author_ID),
+    foreign key (j_id) references journal (unique_journal_ID)
+);
+
 create table degree(
-    p_id    number  not null,
+    a_id    number  not null,
     degree_text varchar(100),
-    primary key (p_id, degree_text),
-    foreign key (p_id) references professor (unqiue_professor_ID)
+    primary key (a_id, degree_text),
+    foreign key (a_id) references author (unqiue_author_ID)
 );
 
 
 create table proposal(
     w_id    number  not null,
-    p_id    number  not null,
+    a_id    number  not null,
     proposal_date   date    not null,
-    primary key(w_id, p_id, proposal_date)
+    primary key(w_id, a_id, proposal_date)
     foreign key (w_id) references academyworker (unique_worker_id),
-    foreign key (p_id) references professor (unique_professor_ID)
+    foreign key (a_id) references author (unique_author_ID)
 );
 
 create table accept(
     w_id    number  not null,
-    p_id    number  not null,
+    a_id    number  not null,
     accepted_date   date    not null,
-    primary key(w_id, p_id, accepted_date)
+    primary key(w_id, a_id, accepted_date)
     foreign key (w_id) references academyworker (unique_worker_id),
-    foreign key (p_id) references professor (unique_professor_ID)
+    foreign key (a_id) references professor (unique_author_ID)
 );
 
 create table review(
@@ -121,8 +127,8 @@ create table review(
     review_date     date    not null,
     review_text        varchar2(1000)    not null,
     j_id    number  not null,
-    p_id    number  not null,
+    a_id    number  not null,
     primary key(unique_review_id),
-    foreign key (p_id) referneces professor (unique_professor_ID),
+    foreign key (a_id) referneces author (unique_author_ID),
     foreign key (j_id) references journal (unique_journal_ID)
 );
