@@ -89,7 +89,7 @@ create table author(
     foreign key (judging_academy) references academy (academy_name)
 );
 
-create table write(
+create table writes(
     a_id    number  not null,
     j_id    number  not null,
     foreign key (a_id) references author (unique_author_ID),
