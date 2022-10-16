@@ -75,6 +75,7 @@ create table academyworker(
     Lname   varchar2(50) not null,
     department  varchar2(50) not null,
     aca_name  varchar2(1000)  not null,
+    salary  number  not null,
     primary key (unique_worker_id),
     foreign key (aca_name) references academy (academy_name)
 );
