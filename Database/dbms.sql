@@ -25,13 +25,6 @@ create table journal(
     foreign key (aca_name) references academy (academy_name)
 );
 
-create table citing(
-    j_id number not null,
-    citing_journal_id   varchar2(100)    not null,
-    primary key (j_id, citing_journal_id),
-    foreign key (j_id) references journal (unique_journal_ID)
-);
-
 create table keyword(
     j_id number not null,
     keyword_text    varchar2(50)    not null,
@@ -50,13 +43,6 @@ create table subscriber(
     primary key (subscriber_id)
 );
 
-create table manages(
-    ins_name  varchar2(30)  not null,
-    sub_id  number  not null,
-    primary key(ins_name, sub_id),
-    foreign key (ins_name) references institute (institute_name),
-    foreign key (sub_id) references subscriber (subscriber_id)
-);
 
 create table rating(
     star    number,
@@ -65,6 +51,13 @@ create table rating(
     j_id    number  not null,
     primary key(sub_id, j_id)
     foreign key (sub_id) references subscriber (subscriber_id),
+    foreign key (j_id) references journal (unique_journal_ID)
+);
+
+create table citing(
+    j_id number not null,
+    citing_journal_id   varchar2(100)    not null,
+    primary key (j_id, citing_journal_id),
     foreign key (j_id) references journal (unique_journal_ID)
 );
 
@@ -77,6 +70,15 @@ create table academyworker(
     salary  number  not null,
     primary key (unique_worker_id),
     foreign key (aca_name) references academy (academy_name)
+);
+
+
+create table manages(
+    ins_name  varchar2(30)  not null,
+    sub_id  number  not null,
+    primary key(ins_name, sub_id),
+    foreign key (ins_name) references institute (institute_name),
+    foreign key (sub_id) references subscriber (subscriber_id)
 );
 
 create table professor(
