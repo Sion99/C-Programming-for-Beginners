@@ -7,7 +7,7 @@ create table academy(
     academy_name    varchar2(1000) not null,
     academy_date date  not null,
     ins_name    varchar(30)  not null,
-    
+
     primary key (academy_name),
     foreign key (ins_name) references institute (institute_name)
 );
@@ -53,6 +53,7 @@ create table subscriber(
 create table manages(
     ins_name  varchar2(30)  not null,
     sub_id  number  not null,
+    primary key(ins_name, sub_id),
     foreign key (ins_name) references institute (institute_name),
     foreign key (sub_id) references subscriber (subscriber_id)
 );
@@ -62,6 +63,7 @@ create table rating(
     written_date    date    not null,
     sub_id  number  not null,
     j_id    number  not null,
+    primary key(sub_id, j_id)
     foreign key (sub_id) references subscriber (subscriber_id),
     foreign key (j_id) references journal (unique_journal_ID)
 );
@@ -97,15 +99,19 @@ create table degree(
 create table proposal(
     w_id    number  not null,
     p_id    number  not null,
+    proposal_date   date    not null,
+    primary key(w_id, p_id, proposal_date)
     foreign key (w_id) references academyworker (unique_worker_id),
     foreign key (p_id) references professor (unique_professor_ID)
 );
 
 create table accept(
+    w_id    number  not null,
     p_id    number  not null,
-    judge_id number not null,
-    foreign key (p_id) references professor (unique_professor_ID),
-    foreign key (judge_id) references judge (unique_judge_id)
+    accepted_date   date    not null,
+    primary key(w_id, p_id, accepted_date)
+    foreign key (w_id) references academyworker (unique_worker_id),
+    foreign key (p_id) references professor (unique_professor_ID)
 );
 
 create table review(
