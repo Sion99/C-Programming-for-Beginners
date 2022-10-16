@@ -36,9 +36,8 @@ create table citing(
 
 create table keyword(
     j_id number not null,
-    keyword_num number not null,
     keyword_text    varchar2(50)    not null,
-    primary key (keyword_num),
+    primary key (j_id, keyword_text),
     foreign key (j_id) references journal (unique_journal_id)
 );
 
@@ -84,10 +83,16 @@ create table professor(
     unique_professor_ID number not null,
     Fname   varchar2(50) not null,
     Lname   varchar2(50) not null,
-    degree  varchar2(100) not null,
     judging_academy varchar2(100),
     primary key (unique_professor_ID),
     foreign key (judging_academy) references academy (academy_name)
+);
+
+create table degree(
+    p_id    number  not null,
+    degree_text varchar(100),
+    primary key (p_id, degree_text),
+    foreign key (p_id) references professor (unqiue_professor_ID)
 );
 
 
