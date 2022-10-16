@@ -19,7 +19,6 @@ create table journal(
     open_to varchar2(50),
     publication_date    date    not null,
     cited_by    number,
-    citing  varchar2(1000),
     vol_num   number  not null,
     aca_name varchar2(50)   not null,
     primary key(unique_journal_ID),
@@ -28,9 +27,8 @@ create table journal(
 
 create table citing(
     j_id number not null,
-    citing_journal_num  number not null,
-    citing_journal_title   varchar2(100)    not null,
-    primary key (citing_journal_num),
+    citing_journal_id   varchar2(100)    not null,
+    primary key (j_id, citing_journal_id),
     foreign key (j_id) references journal (unique_journal_ID)
 );
 
