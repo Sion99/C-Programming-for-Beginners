@@ -90,26 +90,12 @@ create table professor(
     foreign key (judging_academy) references academy (academy_name)
 );
 
-create table writes(
-    p_id number  not null,
-    j_id    number  not null,
-    foreign key (p_id) references professor (unique_professor_id),
-    foreign key (j_id) references journal (unique_journal_Id)
-);
 
 create table proposal(
     w_id    number  not null,
     p_id    number  not null,
     foreign key (w_id) references academyworker (unique_worker_id),
     foreign key (p_id) references professor (unique_professor_ID)
-);
-
-create table judge(
-    unique_judge_id number  not null,
-    Fname   varchar2(50) not null,
-    Lname   varchar2(50) not null,
-    degree  varchar2(100) not null,
-    primary key (unique_judge_id)
 );
 
 create table accept(
@@ -124,6 +110,8 @@ create table review(
     review_date     date    not null,
     review_text        varchar2(1000)    not null,
     j_id    number  not null,
+    p_id    number  not null,
     primary key(unique_review_id),
+    foreign key (p_id) referneces professor (unique_professor_ID),
     foreign key (j_id) references journal (unique_journal_ID)
 );
