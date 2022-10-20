@@ -155,15 +155,11 @@ for i in range(0, 400):
                     '{sub_id}, {j_id});' \
             .format(rating_id=numbers1[i], star=num1, date3=date3, sub_id=numbers[num3], j_id=numbers_j[num2])
         print(printline)
-print("hhhh",cnt)
+
 # academy worker
 # insert into academyworker values (unique_worker_id, 'Fname', 'Lname', 'depart', 'aca_name', salary)
 print('-- acadmeyworker')
-print(len(data["academy"]))
-print(len(data["worker"]))
-print(len(data["department"]))
 numbers_worker = np.random.choice(range(40000, 49999), 400, replace=False)
-numbers_worker_list = list(numbers_worker)
 
 for i in range(400):
     aca_num = i // 30
@@ -176,23 +172,37 @@ for i in range(400):
         department=data["department"][tt], aca_name=data["academy"][aca_num], salary=salary)
     print(printline)
 
-# author
+# author, degree
 # insert into author values (unique_author_id, 'fname', 'lname', 'judging academy')
 print('-- author')
 numbers_author = np.random.choice(range(50000, 59999), 300, replace=False)
-numbers_author_list = list(numbers_author)
-
-
+numbers_author_list= list(numbers_author)
 for i in range(300):
     author = data["name"][i].split(' ')
-    auth_num = random.randrange(0, 30)
     printline = 'insert into author values ({unique_author_id}, \'{fname}\', \'{lname}\', \'{judging_academy}\');'.format(
-        unique_author_id=numbers_author[i], fname=author[0], lname=author[1], judging_academy=data["academy"][auth_num])
+        unique_author_id=numbers_author[i], fname=author[0], lname=author[1], judging_academy="NULL")
     print(printline)
+    degree_n=int(random.random()*100)
+    school=data["university"][int(random.random() * len(data["university"]))]
+    print("insert into degree values ({0}, 'B.S. {1}');".format(numbers_author[i],school))
+    if degree_n<24:
+        continue
+    if degree_n<55:
+        print("insert into degree values ({0}, 'M.S. {1}');".format(numbers_author[i], school))
+    else:
+        print("insert into degree values ({0}, 'M.S. {1}');".format(numbers_author[i], data["university"][
+            int(random.random() * len(data["university"]))]))
+    if degree_n%2==0:
+        continue
+    if degree_n<55:
+        print("insert into degree values ({0}, 'Ph.D. {1}');".format(numbers_author[i], school))
+    else:
+        school = data["university"][int(random.random() * len(data["university"]))]
+        print("insert into degree values ({0}, 'Ph.D. {1}');".format(numbers_author[i], school))
 
 # write
 # insert into write values (a_id, j_id)
-print('-- writes')
+print('-- write')
 # 각 저널마다 author를 여러명, 하는 걸로 하자
 mostlywrite = {}
 for i in number_j_list:
@@ -200,11 +210,11 @@ for i in number_j_list:
     number_write = random.randrange(1, 5)   # 공저자 수
     for j in range(number_write):
         rand_author = random.randrange(0, 299)
-        if numbers_author_list[rand_author] not in mostlywrite:
-            mostlywrite[numbers_author_list[rand_author]]=1
+        if numbers_author[rand_author] not in mostlywrite:
+            mostlywrite[numbers_author[rand_author]]=1
         else:
-            mostlywrite[numbers_author_list[rand_author]]+=1
-        printline = 'insert into write values ({a_id}, {j_id});'.format(a_id=numbers_author_list[rand_author], j_id=i)
+            mostlywrite[numbers_author[rand_author]]+=1
+        printline = 'insert into write values ({a_id}, {j_id});'.format(a_id=numbers_author[rand_author], j_id=i)
         print(printline)
 
 print(len(mostlywrite))
@@ -226,14 +236,40 @@ print('— proposal')
 for i in range(len(data['academy'])):
     print(f'academy name: {data["academy"][i]}')
     number_proposal = random.randrange(2, 6)    # 제안 수, per academy(not worker!)
-    number_rand_auth = random.randrange(0, 150)
     for j in range(number_proposal):
+        number_rand_auth = random.randrange(0, 150)
         pdate = (random_date("2020/01/19", "2022/01/19", random.random())).replace('/', '-')
         accepted = random.random()
         if accepted > 0.3:
             accepted = "YES"
+            print("update author set judging_academy = '{0}' where unique_author_id = {1};".format(data["academy"][i],mostlywrite_list[number_rand_auth][1] ))
         else:
             accepted = "NO"
         printline = 'insert into proposal values ({w_id}, {a_id}, TO_DATE(\'{p_date}\', \'yyyy-mm-dd\'), \'{accepted}\');'\
-            .format(w_id = numbers_worker_list[i], a_id=mostlywrite_list[number_rand_auth][1], p_date=pdate, accepted=accepted)
+            .format(w_id = numbers_worker[i], a_id=mostlywrite_list[number_rand_auth][1], p_date=pdate, accepted=accepted)
         print(printline)
+
+# review
+# insert into review values (unique_review_id, TO_DATE(review_date), 'review_text Reviews', j_id, a_id);
+print('— review')
+# review id 60000-70000
+# review_date journal date 보다 무조건 더 뒤로 써야함
+#journal publication date = journal_start_date
+numbers_review = np.random.choice(range(60000, 69999), 60, replace=False)
+print(len(data["reviews"]))
+review_journal_id = numbers_j
+print(review_journal_id)
+random.shuffle(review_journal_id)
+random.shuffle(numbers_author_list)
+print(numbers_author_list)
+print(journal_start_date)
+for i in range(60):
+    text_num = random.randrange(0, 49)
+    jour_id = journal_start_date[str(review_journal_id[i])]
+    review_date = random_date(jour_id, "2022/10/19", random.random())
+    review_date = review_date.replace('/', '-')
+    print('insert into review values ({unique_review_id}, TO_DATE(\'{review_date}\', \'yyyy-mm-dd\'),'
+          '\'{review_text}\', {j_id}, {a_id});'.format(unique_review_id=numbers_review[i], review_date=review_date,
+                                                        review_text=data['reviews'][text_num],
+                                                        j_id=review_journal_id[i],
+                                                        a_id=numbers_author_list[i]))
