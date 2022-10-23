@@ -62,8 +62,8 @@ create table citing(
 
 create table academyworker(
     unique_worker_id    number  not null,
-    Fname   varchar2(50) not null,
-    Lname   varchar2(50) not null,
+    F_name   varchar2(50) not null,
+    L_name   varchar2(50) not null,
     department  varchar2(50) not null,
     aca_name  varchar2(1000)  not null,
     salary  number  not null,
@@ -82,8 +82,8 @@ create table manages(
 
 create table author(
     unique_author_ID number not null,
-    Fname   varchar2(50) not null,
-    Lname   varchar2(50) not null,
+    F_name   varchar2(50) not null,
+    L_name   varchar2(50) not null,
     judging_academy varchar2(100),
     primary key (unique_author_ID),
     foreign key (judging_academy) references academy (academy_name)
@@ -92,15 +92,16 @@ create table author(
 create table writes(
     a_id    number  not null,
     j_id    number  not null,
+    primary key (a_id, j_id)
     foreign key (a_id) references author (unique_author_ID),
     foreign key (j_id) references journal (unique_journal_ID)
 );
 
 create table degree(
     a_id    number  not null,
-    degree_text varchar(100),
+    degree_text varchar(200),
     primary key (a_id, degree_text),
-    foreign key (a_id) references author (unqiue_author_ID)
+    foreign key (a_id) references author (unique_author_ID)
 );
 
 
@@ -108,18 +109,10 @@ create table proposal(
     w_id    number  not null,
     a_id    number  not null,
     proposal_date   date    not null,
+    accepted    varchar2(100)   not null,
     primary key(w_id, a_id, proposal_date)
     foreign key (w_id) references academyworker (unique_worker_id),
     foreign key (a_id) references author (unique_author_ID)
-);
-
-create table accept(
-    w_id    number  not null,
-    a_id    number  not null,
-    accepted_date   date    not null,
-    primary key(w_id, a_id, accepted_date)
-    foreign key (w_id) references academyworker (unique_worker_id),
-    foreign key (a_id) references professor (unique_author_ID)
 );
 
 create table review(
