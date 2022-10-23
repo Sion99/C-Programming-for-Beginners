@@ -1,20 +1,23 @@
 def f(x):
-    return x**3 + 2*x**2 - 1
+    return x**10 - 1
+
 
 xl = 0
-xu = 1
-es = 0.000001
+xu = 1.3
+es = 10**-6
 count = 0
-while(True):
+n = int(input('iteration? '))
+while(count < n):
     count += 1
     xr = xu - f(xu)*(xl-xu)/(f(xl)-f(xu))
-    print(f'{count}회차 : xr = {xr}')
     if f(xr)*f(xu) < 0:
         xl = xr
     else:
-        if abs((xl - xr)/xr) < es:
+        if abs((xl - xr)/xr) <= es:
             break
         else:
             xu = xr
+    
+    print(f'{count}회차 : xl = {xl} xu = {xu} xr = {xr}')
 
 print(xr)

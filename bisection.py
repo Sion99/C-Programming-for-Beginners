@@ -1,9 +1,10 @@
 def f(x):
-    return x**3 + 2*x**2 - 1
+    return x**10 - 1
+    
 
 xl = 0
-xu = 1
-es = 0.000001
+xu = 1.3
+es = 10**-6
 count = 0
 while(True):
     count += 1
