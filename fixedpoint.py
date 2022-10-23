@@ -6,6 +6,7 @@ def g(x):
 x = 0
 es = 10**-6
 count = 0
+
 while(True):
     count += 1
     temp = g(x)

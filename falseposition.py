@@ -6,14 +6,17 @@ xl = 0
 xu = 1.3
 es = 10**-6
 count = 0
+xrold = 0
+xr = 0
 n = int(input('iteration? '))
 while(count < n):
     count += 1
+    xrold = xr
     xr = xu - f(xu)*(xl-xu)/(f(xl)-f(xu))
     if f(xr)*f(xu) < 0:
         xl = xr
     else:
-        if abs((xl - xr)/xr) <= es:
+        if abs((xrold - xr)/xr) < es:
             break
         else:
             xu = xr
