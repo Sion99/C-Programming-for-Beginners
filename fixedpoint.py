@@ -1,9 +1,11 @@
 import numpy as np
 
 def g(x):
-    return np.exp(-x)
+    # return np.exp(-x)
+    # return x**10-x-1
+    return (-2*x**3 + 11.7*x**2 + 5)/17.7
 
-x = 0
+x = 3
 es = 10**-6
 count = 0
 

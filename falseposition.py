@@ -1,9 +1,9 @@
 def f(x):
-    return x**10 - 1
+    return x**3.5-80
 
 
-xl = 0
-xu = 1.3
+xl = 2
+xu = 5
 es = 10**-6
 count = 0
 xrold = 0
