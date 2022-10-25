@@ -156,13 +156,27 @@ after update of salary on Employee
 for each row
 begin
 if :new.salary>80000 Then
-dbms_output.put_line('Old salary: 55000');
-dbms_output.put_line( 'New salary: ' || :new.salary);
+dbms_output.put_line('Old salary: ' || :old.salary);
+dbms_output.put_line('[ALERT] New salary: ' || :new.salary);
+dbms_output.put_line('Salary Difference: ');
+dbms_output.put_line(:new.salary-:old.salary);
 end if;
 end;
 /
 -- / 를 적지 않으면 trigger가 실행되지 않음.
+ALTER TRIGGER SALARY_VIOLATION ENABLE; 
+SET SERVEROUTPUT ON;
+UPDATE EMPLOYEE
+SET Salary = salary*2
+WHERE Ssn = '888665555';
 
---old salary: 55000
---New salary: 110000
---Drop Trigger university.Salary_Violation
+
+--Old salary: 55000
+--[ALERT] New salary: 110000
+--Salary Difference: 55000
+
+rollback;
+-- Rollback complete.
+drop trigger university.salary_violation;
+-- Drop trigger if needed;
+-- Trigger dropped.
