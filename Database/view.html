@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Lab #9
+        </title>
+    </head>
+    <body>
+        <article>
+            <h1>
+                Lab #9: Repeating Lab #5-3 via JSP
+            </h1>
+            <p>
+                Query 1: Search for employees satisfying the following conditions:
+            </p>
+            <form method="POST" action="response.jsp">
+                Project name starting with: 
+                <select name = "pname1">
+                    <option value="ProductX">ProductX</option>
+                    <option value="ProductY">ProductY</option>
+                    <option value="ProductZ">ProductZ</option>
+                    <option value="Computerization">Computerization</option>
+                    <option value="Reorganization">Reorganization</option>
+                    <option value="Newbenefits">Newbenefits</option>
+                </select>
+                Department number: 
+                <select name = "dnum">
+                    <option value="1">1</option>
+                    <option value="4">4</option>
+                    <option value="5" selected>5</option>
+                </select>
+                Salary fewer than or equal to: 
+                <input type="text" name="salary">
+                <br><br>
+                Query 2: Search for employees satisfying the following conditions:<br><br>
+                Supervisor's SSN:
+                <input type="text" name="superssn1">
+                Address including:
+                <input type="text" name="addr">
+                <br><br>
+                Query 3: Search for employees working on:<br><br>
+                Project name:
+                <select name = "pname2">
+                    <option value="ProductX">ProductX</option>
+                    <option value="ProductY">ProductY</option>
+                    <option value="ProductZ">ProductZ</option>
+                    <option value="Computerization">Computerization</option>
+                    <option value="Reorganization">Reorganization</option>
+                    <option value="Newbenefits">Newbenefits</option>
+                </select>
+                Working hours more than:
+                <input type="text" name="hours1">
+                <br><br>
+                Query 4: Search for employees working on:<br><br>
+                Project name starting with:
+                <input type="text" name="pname3"><br>
+                Working hours more than:
+                <input type="text" name="hours2">
+                <br><br>
+                Query 5: Search for a supervisee(s) and his/her dependents(s) with<br><br>
+                Supervisor's SSN:
+                <input type="text" name="superssn2"><br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+                <br>
+
+            </form>
+        </article>
+    </body>
+</html>
