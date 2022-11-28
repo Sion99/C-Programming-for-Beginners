@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 
 
 def f(x):
@@ -22,19 +23,29 @@ def bisection():
     xrold = 0
     xl = -2
     xu = 2
-    es = 10**-6
+    es = 0.5
+    x1 = [0]
+    y1 = [0]
+    ea = 0
     while (True):
         xrold = xr
         xr = (xl + xu) / 2
         iter += 1
         test = f(xl) * f(xr)
+        if xr != 0:
+            ea = abs((xr - xrold) / xr) * 100
+        x1.append(iter)
+        y1.append(ea)
         if test < 0:
             xu = xr
         else:
-            if abs((xr-xrold)/xr) < es:
+            if abs((xr-xrold)/xr)*100 < es:
                 break
             else:
                 xl = xr
+
+    plt.plot(x1, y1)
+    plt.show()
     print(iter, xr)
 
 
@@ -44,7 +55,7 @@ def modifiedbisect():
     xu = 2
     xr = 0
     xrold = 0
-    es = 10**-6
+    es = 0.5
     fl = f(xl)
     while (True):
         xrold = xr
@@ -55,7 +66,7 @@ def modifiedbisect():
         if test < 0:
             xu = xr
         else:
-            if abs((xr-xrold)/xr) < es:
+            if abs((xr-xrold)/xr)*100 < es:
                 break
             else:
                 xl = xr
@@ -128,6 +139,17 @@ def modifiedfalse():
 
 def fixedpoint():
     xr = 0
+    return 0
+
+
+def newton():
+    # initial guess
+    x0 = 0
+    iter = 0
+    xr = 0
+    while (True):
+        xrold = xr
+        xr = h(xrold)
 
 
 bisection()
